@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Open Sans - Condensed';
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+}
+header{
+    margin: 0;
+    background-color: #dcdcdc;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#logo{
+    padding-top:65px;
+    height: 100px;
+    width: 273px;
+}
+#head_con{
+    display:flex ;
+    flex-direction: row;
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#num{
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:450px  ;
+    width: 257px;
+    height: 81px;
+    color: #767676;
+    font-family: 'Open Sans - Condensed', sans-serif;;
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46px;
+    text-align: right;
+}
+menu{
+    margin: 0;
+    background-color: #777777;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: center;
+}
+#menu-con{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box ;
+}
+#menu-con a{
+
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#menu-con ul.cent_elem_m:first-child:after {
+
+}
+#menu-con ul.cent_elem_m:after{
+    content: "|";
+    color: #ffffff;
+    padding-left: 35px;
+}
+
+#menu-con ul.cent_elem_m:last-child:after{
+    content: "" ;
+}
+
+#menu-con a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.slick-track{
+    display: flex;
+    position: absolute;
+    top: 267px;
+    justify-content: center;
+    z-index: -1;
+}
+.slick-list{
+    background-color: #f9f9f9;
+
+}
+.slider_item{
+    display: flex;
+    justify-content: center;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top:506px;
+    z-index: 10;
+    font-size: 0;
+    width: 34px;
+    height: 61px;
+    border: 0;
+}
+#slick-slide-control00{
+    display: none;
+}
+
+#slick-slide-control01{
+    display: none;
+}
+.slider .slick-arrow.slick-prev{
+    left: 25%;
+    background: url('../images/l.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+    right: 25%;
+    background: url('../images/r.png') 0 0 / 100% no-repeat;
+}
+#content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#group{
+    width: 980px;
+    margin-top: 410px;
+}
+.bread-c{
+    display: flex;
+    flex-direction: row;
+}
+.bread-c a{
+    color: #777777;
+    margin-right:10px;
+    text-decoration: none;
+    border-bottom: 1px solid #777777;
+}
+.bread-c a:after{
+    content: "/";
+    margin-left:10px;
+    border-bottom: 0;
+}
+.bread-c a:last-child:after{
+    content: "";
+}
+.bread-c a:last-child{
+    border-bottom: 0;
+}
+.menu{
+    margin-top: 10px;
+}
+.hidden-menu{
+    display: none;
+}
+ .menu-list:hover  .hidden-menu{
+    display: block;
+}
+li{
+    list-style: none;
+}
+footer{
+    height: 100%;
+    width: 100%;
+    margin-top: auto;
+    background-color: #777777;
+    display: flex;
+    justify-content: center;
+}
+#f_con{
+    width: 980px;
+    padding: 50px 10px 53px 10px;
+    display: flex;
+    flex-direction: row;
+}
+#mail{
+
+    width: 200px;
+    height: 35px;
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+#list a{
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 164px;
+    flex-wrap: nowrap;
+}
+#list li{
+    width: 306px;
+    list-style: none;
+}
+#company{
+    padding-left:234px;
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: 33px;
+    color: #ffffff;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+#company img{
+    padding-right: 5px;
+    width: 36px;
+    height: 38px;
+}
