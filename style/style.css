@@ -45,6 +45,10 @@ body{
     line-height: 46px;
     text-align: right;
 }
+.feedback{
+    text-align: right;
+    margin-top:10px;
+}
 menu{
     margin: 0;
     background-color: #777777;
@@ -69,7 +73,6 @@ menu{
     text-decoration: none;
     box-sizing: border-box;
 }
-
 #menu-con ul.cent_elem_m:first-child:after {
 
 }
@@ -133,39 +136,208 @@ menu{
 #group{
     width: 980px;
     margin-top: 410px;
+    display: flex;
+    flex-direction: row;
 }
 .bread-c{
     display: flex;
     flex-direction: row;
+    width: 319px;
 }
 .bread-c a{
     color: #777777;
-    margin-right:10px;
+    margin-right:5px;
     text-decoration: none;
+}
+.bread-c a span{
     border-bottom: 1px solid #777777;
+    color: #767676;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: left;
 }
 .bread-c a:after{
     content: "/";
-    margin-left:10px;
+    margin-left:5px;
     border-bottom: 0;
 }
 .bread-c a:last-child:after{
     content: "";
 }
-.bread-c a:last-child{
+.bread-c a:last-child span{
     border-bottom: 0;
 }
-.menu{
-    margin-top: 10px;
+#menu{
+    margin-top: 26px;
+    width: 225px;
 }
 .hidden-menu{
     display: none;
+    margin-right: 10px;
+    padding-left: 20px;
+
+}
+.hidden-menu li{
+    list-style: inherit;
+}
+.hidden-part:hover  span{
+    color: black;
+    text-decoration: underline;
+}
+.menu-list{
+    color: #767676;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+    text-align: left;
 }
  .menu-list:hover  .hidden-menu{
     display: block;
 }
+.menu-list:hover span{
+    border-bottom: 1px solid  #767676;
+}
+.menu-list:hover .hidden-part span{
+    border-bottom: 0;
+}
+.hidden-part span{
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+#left{
+    width: 202px;
+}
+#im-price{
+    margin-right: 35px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #444444;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 25px;
+    text-align: center;
+}
+#im-price img{
+    width: 97px;
+    height: 111px;
+}
 li{
     list-style: none;
+}
+#purch-part{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.content-block{
+    margin-right: 1px;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+}
+.nophoto{
+    width: 210px;
+    height: 209px;
+    margin: 20px;
+}
+.basket{
+    width: 28px;
+    height: 21px;
+    margin-left: 65px;
+    margin-top: 57px;
+}
+.bot-pur{
+    display: flex;
+    flex-direction: row;
+}
+.content-block .text{
+    color: #767676;
+    margin-left: 20px;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+    width: 220px;
+    height: 35px;
+    letter-spacing: -1px;
+}
+.price{
+    margin: 55px 0px 14px 18px;
+    color: #444444;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 28px;
+    font-weight: 590;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: left;
+}
+.right-part{
+    display: flex;
+    flex-direction: column;
+}
+.pagination{
+    color: #767676;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 32px;
+}
+.pagination span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pagination span:hover{
+    color:black;
+    font-size: 18px;
+}
+.line{
+    width: 780px;
+    height: 1px;
+    margin-top: 67px;
+    margin-bottom: 50px;
+    background-color: #777777;
+}
+.bottom-text{
+    display: flex;
+flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 220px;
+}
+.bottom-text span{
+    width: 370px;
+    color: #767676;
+    font-family: "pt_sansregular",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 22px;
 }
 footer{
     height: 100%;

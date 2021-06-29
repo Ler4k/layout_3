@@ -4,9 +4,14 @@
   <link rel="stylesheet" href="style/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/remodal.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
+<!--  <script src="js/script.js"></script>-->
+  <link rel="stylesheet" href="style/remodal.css">
+  <link rel="stylesheet" href="style/remodal-default-theme.css">
   <meta charset="UTF-8">
   <title>Layout 3</title>
 </head>
@@ -16,12 +21,35 @@
     <div id="com_logo">
       <img src="images/logo.png" id="logo" class="lo_elem" alt="this should be logo ">
     </div>
+    <div>
     <div id="num">
       +7(499) 777-77-77 +7(499) 777-77-77
     </div>
+    <div class="feedback">
+      <a class="mainButton" href="#modal">Обратная связь</a>
+    </div>
   </div>
+    </div>
 </header>
-
+<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <div class="remodalBorder">
+    <div class="remodal-close" data-remodal-action="close" aria-label="Close">
+      <img src="images/Shape_7_copy_2.png">
+    </div>
+    <form id="form">
+        <h2 id="modal1Title">ОБРАТНАЯ СВЯЗЬ</h2>
+      <div>Ваше имя*</div>
+      <input name="name"  type="text" class="putName" placeholder="Имя" required>
+      <div>Телефон*</div>
+      <input name="phone" type="tel" class="putPhone" placeholder="+380 **********" required>
+      <div>Email*</div>
+      <input name="email" type="email" class="putMail" placeholder="name@gmail.com" required>
+      <div>Сообщение</div>
+      <textarea name="message" type="text" class="putMessage" placeholder="Введите свое сообщение" required></textarea>
+      <input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
+    </form>
+  </div>
+</div>
 <menu>
   <div id="menu-con">
     <ul class="cent_elem_m"><a href >Главная</a></ul>
@@ -42,25 +70,83 @@
 
 <div id="content">
   <div id="group">
-    <div class="bread-c">
-      <a href class="bread-text">Главная</a><a href class="bread-text">Каталог</a><a href class="bread-text">Бытовая техника</a>
-    </div>
-    <ul id="menu">
-      <li class="menu-list">Автомобили</li>
-      <li class="menu-list"><a href="#">Бытовая техника</a>
+    <div id="left">
+      <div class="bread-c">
+        <a href class="bread-text"><span>Главная</span></a><a href class="bread-text"><span>Каталог</span></a><a href class="bread-text"><span>Бытовая техника</span></a>
+      </div>
+      <div id="menu">
+      <li class="menu-list"><span>Автомобили</span></li>
+      <li class="menu-list"><span>Бытовая техника</span>
         <ul class="hidden-menu">
-      <li>Микроволновки</li>
-      <li>Холодильники</li>
-          <li>Посудомоечные машины</li>
-          <li>Чайники</li>
+          <li class="hidden-part"><span >Микроволновки</span></li>
+          <li class="hidden-part"><span >Холодильники</span></li>
+          <li class="hidden-part"><span >Посудомоечные машины</span></li>
+          <li class="hidden-part"><span >Чайники</span></li>
         </ul>
       </li>
-      <li class="menu-list">Мобильная техника</li>
-      <li class="menu-list">Компьютеры</li>
-      <li class="menu-list">Одежда</li>
-      <li class="menu-list">Недвижимость</li>
+      <li class="menu-list"><span>Мобильная техника</span></li>
+      <li class="menu-list"><span>Компьютеры</span></li>
+      <li class="menu-list"><span>Одежда</span></li>
+      <li class="menu-list"><span>Недвижимость</span></li>
     </div>
-  </div>
+      <div id="im-price">
+      <img src="images/price-list.png">
+        Прайс-лист
+    </div>
+    </div>
+    <div class="right-part">
+    <div id="purch-part">
+      <div class="content-block">
+        <img class="nophoto" src="images/nophoto.png">
+        <div class="text">Самый клёвый чайник, который надо купить!</div>
+        <div class="bot-pur">
+          <div class="price">1900 р.</div>
+          <a href="" class="basket"><img  src="images/addtobasket_mini.png"></a>
+        </div>
+      </div>
+      <div class="content-block">
+        <img class="nophoto" src="images/nophoto.png">
+        <div class="text">Самый клёвый чайник, который надо купить!</div>
+        <div class="bot-pur">
+          <div class="price">1900 р.</div>
+          <a href="" class="basket"><img src="images/addtobasket_mini.png"></a>
+        </div>
+      </div>
+      <div class="content-block">
+        <img class="nophoto" src="images/nophoto.png">
+        <div class="text">Самый клёвый чайник, который надо купить!</div>
+        <div class="bot-pur">
+          <div class="price">1900 р.</div>
+          <a href="" class="basket"><img src="images/addtobasket_mini.png"></a>
+        </div>
+      </div>
+      <div class="content-block">
+        <img class="nophoto" src="images/nophoto.png">
+        <div class="text">Самый клёвый чайник, который надо купить!</div>
+        <div class="bot-pur">
+          <div class="price">1900 р.</div>
+          <a href="" class="basket"><img src="images/addtobasket_mini.png"></a>
+        </div>
+      </div>
+      <div class="content-block">
+        <img class="nophoto" src="images/nophoto.png">
+        <div class="text">Самый клёвый чайник, который надо купить!</div>
+        <div class="bot-pur">
+          <div class="price">1900 р.</div>
+          <a href=""><img class="basket" src="images/addtobasket_mini.png"></a>
+        </div>
+      </div>
+    </div>
+      <div class="pagination">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+      </div>
+      <div class="line"></div>
+      <div class="bottom-text">
+        <span>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </span>
+        <span>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</span>
+      </div>
+      </div>
+    </div>
 </div>
 <footer>
   <div id="f_con">
